@@ -1,287 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage - Ausiliari di Prossimità Bologna</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/homepage.css">
-    <link rel="stylesheet" href="../css/common.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
 
-<body class="hero-loading">
+  <body class="hero-loading">
     <nav class="navbar navbar-expand-lg navbar-dark bg-bologna-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="homepage.html">
-                <img src="../immagini/logo volontari no bgrnd.png" alt="Logo" class="navbar-logo">
-                <span class="navbar-brand-text">AUSILIARI DI PROSSIMITÁ</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center gap-2"
+          href="homepage.html"
+        >
+          <img
+            src="../immagini/logo volontari no bgrnd.png"
+            alt="Logo"
+            class="navbar-logo"
+          />
+          <span class="navbar-brand-text">AUSILIARI DI PROSSIMITÁ</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="associazioni.html">Associazioni</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servizi.html">Servizi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galleria.html">Galleria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contatti.html"><i class="fa-solid fa-phone"></i>
-                            Contatti</a></li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="associazioni.html">Associazioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servizi.html">Servizi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galleria.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatti.html"
+                ><i class="fa-solid fa-phone"></i> Contatti</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section id="hero" class="position-relative overflow-hidden text-white pt-5"
-        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('../immagini/foto\ di\ gruppo.jpeg') center/cover no-repeat fixed; min-height: 100vh; display: flex; align-items: center;">
-        <div class="container">
+    <section
+      id="hero"
+      class="position-relative overflow-hidden text-white pt-5"
+      style="
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+          url(&quot;../immagini/foto\ di\ gruppo.jpeg&quot;) center/cover
+            no-repeat fixed;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="row align-items-center">
-                        <div class="col-md-8">
-                            <h1 class="display-3 fw-bold mb-4 animate-fade-in">AUSILIARI DI PROSSIMITÁ</h1>
-                            <h2 class="display-5 mb-4">Volontari per Bologna</h2>
-                            <p class="lead fs-4 mb-5">
-                                Presenza sul territorio, vicini alle persone, al servizio della comunità
-                            </p>
+              <div class="col-md-8">
+                <h1 class="display-3 fw-bold mb-4 animate-fade-in">
+                  AUSILIARI DI PROSSIMITÁ
+                </h1>
+                <h2 class="display-5 mb-4">Volontari per Bologna</h2>
+                <p class="lead fs-4 mb-5">
+                  Presenza sul territorio, vicini alle persone, al servizio
+                  della comunità
+                </p>
 
-                            <div
-                                class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start mb-5 mb-md-0 hero-cta-group">
-                                <a href="servizi.html" class="btn btn-primary hero-btn-main text-nowrap">
-                                    Scopri i Servizi
-                                </a>
-                                <a href="contatti.html#diventa-volontario"
-                                    class="btn btn-outline-light hero-btn-secondary text-nowrap">
-                                    Diventa Volontario
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center">
-                            <div class="logo-hero-container text-center">
-                                <img src="../immagini/logo volontari no bgrnd.png" class="logo-hero"
-                                    alt="Logo Ausiliari">
-                            </div>
-                        </div>
-                    </div>
+                <div
+                  class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start mb-5 mb-md-0 hero-cta-group"
+                >
+                  <a
+                    href="homepage.html#hot"
+                    class="btn btn-primary hero-btn-main text-nowrap"
+                  >
+                    Scopri i Servizi
+                  </a>
+                  <a
+                    href="contatti.html#diventa-volontario"
+                    class="btn btn-outline-light hero-btn-secondary text-nowrap"
+                  >
+                    Diventa Volontario
+                  </a>
                 </div>
+              </div>
 
-                <div class="col-lg-6 text-center">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-4">
-                            <div class="counter fs-1 fw-bold text-white">70</div>
-                            <div class="fs-6">Volontari</div>
-                        </div>
-                        <div class="col-4">
-                            <div class="counter fs-1 fw-bold text-white no-plus">8</div>
-                            <div class="fs-6">Associazioni aderenti</div>
-                        </div>
-                        <div class="col-4">
-                            <div class="counter fs-1 fw-bold text-white">100</div>
-                            <div class="fs-6">Servizi</div>
-                        </div>
-                    </div>
+              <div class="col-md-4 text-center">
+                <div class="logo-hero-container text-center">
+                  <img
+                    src="../immagini/logo volontari no bgrnd.png"
+                    class="logo-hero"
+                    alt="Logo Ausiliari"
+                  />
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <div class="row g-4 justify-content-center">
+              <div class="col-4">
+                <div class="counter fs-1 fw-bold text-white">70</div>
+                <div class="fs-6">Volontari</div>
+              </div>
+              <div class="col-4">
+                <div class="counter fs-1 fw-bold text-white no-plus">8</div>
+                <div class="fs-6">Associazioni aderenti</div>
+              </div>
+              <div class="col-4">
+                <div class="counter fs-1 fw-bold text-white">100</div>
+                <div class="fs-6">Servizi</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="chi-siamo" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center">
-                    <h2 class="display-5 fw-bold mb-4">Ausiliari di Prossimità Bologna</h2>
-                    <p class="lead mb-0">
-                        Gli Ausiliari di Prossimità sono una rete di associazioni di volontariato che collaborano
-                        per garantire presenza, supporto e sicurezza sul territorio, al servizio della comunità.
-                        Operano nei quartieri con attività di presidio, ascolto e informazione, in coordinamento
-                        con la Polizia Locale e i servizi comunali.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h2 class="display-5 fw-bold mb-4">
+              Ausiliari di Prossimità Bologna
+            </h2>
+            <p class="lead mb-0">
+              Gli Ausiliari di Prossimità sono una rete di associazioni di
+              volontariato che collaborano per garantire presenza, supporto e
+              sicurezza sul territorio, al servizio della comunità. Operano nei
+              quartieri con attività di presidio, ascolto e informazione, in
+              coordinamento con la Polizia Locale e i servizi comunali.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="perche-volontario" class="py-5 volunteer-section">
-        <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-9 text-center">
-                    <h2 class="display-5 fw-bold mb-3">Perché diventare volontario?</h2>
-                    <p class="lead volunteer-text">
-                        Diventare volontario significa mettersi al servizio della comunità, contribuire alla vivibilità
-                        dei quartieri e costruire relazioni di fiducia con i cittadini. Gli Ausiliari di Prossimità
-                        operano insieme per promuovere presenza, ascolto e supporto sul territorio, offrendo un aiuto
-                        concreto alla città e un’esperienza umana di grande valore.
-                    </p>
+    <section id="chi-siamo-completo" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold mb-4">Chi siamo</h2>
 
-                    <div class="text-center volunteer-actions mb-4">
-                        <a href="contatti.html#contatti" class="btn btn-primary btn-lg px-5 me-2 mb-2">Contattaci</a>
-                        <a href="#chi-siamo-completo" class="btn btn-outline-primary btn-lg px-5 mb-2">Scopri di più</a>
-                    </div>
-                </div>
-            </div>
+            <p>
+              Gli Ausiliari di Prossimità rappresentano una rete coordinata di
+              associazioni di volontariato attive nei quartieri della città di
+              Bologna, impegnate a garantire una presenza costante sul
+              territorio e a promuovere relazioni di fiducia con i cittadini.
+            </p>
 
-            <div class="filmstrip-viewport">
-                <div class="filmstrip-track" id="volontariFilmstrip"></div>
-            </div>
+            <p>
+              Le associazioni aderenti collaborano tra loro e con le istituzioni
+              locali, in particolare con il Comune e la Polizia Locale,
+              contribuendo a sviluppare un modello di sicurezza partecipata e di
+              attenzione alla comunità.
+            </p>
+
+            <p>
+              Attraverso attività di presidio, ascolto e supporto informativo,
+              gli Ausiliari operano nei luoghi pubblici, nei parchi e nelle aree
+              urbane, favorendo il dialogo, la prevenzione e il benessere
+              collettivo.
+            </p>
+
+            <p>
+              L’impegno dei volontari si basa su valori di responsabilità,
+              collaborazione e spirito civico, con l’obiettivo di rendere i
+              quartieri più vivibili, inclusivi e sicuri per tutti.
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img
+              src="../immagini/rappresentanti volontari.jpeg"
+              alt="Volontari Ausiliari di Prossimità"
+              class="img-fluid rounded-4 shadow-lg"
+              style="max-height: 400px; object-fit: cover"
+            />
+          </div>
         </div>
-    </section>
-
-    <section id="hot" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold mb-3">Ultimi Servizi</h2>
-                    <p class="lead">Le nostre attività recenti sul territorio</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div id="serviziCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
-                        <div class="carousel-indicators" id="carouselIndicators"></div>
-                        <div class="carousel-inner" id="carouselInner"></div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#serviziCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#serviziCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-4">
-                <a href="servizi.html" class="btn btn-primary btn-lg px-5">Tutti i Servizi</a>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="associazioni-preview" class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold mb-3">Le Nostre Associazioni</h2>
-                    <p class="lead">Scegli quella più vicina a te</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div id="associazioniCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel"
-                        data-bs-interval="4000">
-                        <div class="carousel-indicators" id="associazioniIndicators"></div>
-                        <div class="carousel-inner" id="associazioniInner"></div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#associazioniCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#associazioniCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-4">
-                <a href="associazioni.html" class="btn btn-outline-primary btn-lg px-5">Vedi Tutte</a>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold mb-3">Le Nostre Associazioni</h2>
+            <p class="lead">Scegli quella più vicina a te</p>
+          </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div
+              id="associazioniCarousel"
+              class="carousel slide shadow-lg"
+              data-bs-ride="carousel"
+              data-bs-interval="4000"
+            >
+              <div
+                class="carousel-indicators"
+                id="associazioniIndicators"
+              ></div>
+              <div class="carousel-inner" id="associazioniInner"></div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#associazioniCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#associazioniCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a
+            href="associazioni.html"
+            class="btn btn-outline-primary btn-lg px-5"
+            >Vedi Tutte</a
+          >
+        </div>
+      </div>
     </section>
 
-    <section id="chi-siamo-completo" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">Chi siamo</h2>
-
-                    <p>
-                        Gli Ausiliari di Prossimità rappresentano una rete coordinata di associazioni
-                        di volontariato attive nei quartieri della città di Bologna, impegnate a garantire
-                        una presenza costante sul territorio e a promuovere relazioni di fiducia con i cittadini.
-                    </p>
-
-                    <p>
-                        Le associazioni aderenti collaborano tra loro e con le istituzioni locali,
-                        in particolare con il Comune e la Polizia Locale, contribuendo a sviluppare
-                        un modello di sicurezza partecipata e di attenzione alla comunità.
-                    </p>
-
-                    <p>
-                        Attraverso attività di presidio, ascolto e supporto informativo,
-                        gli Ausiliari operano nei luoghi pubblici, nei parchi e nelle aree urbane,
-                        favorendo il dialogo, la prevenzione e il benessere collettivo.
-                    </p>
-
-                    <p>
-                        L’impegno dei volontari si basa su valori di responsabilità, collaborazione
-                        e spirito civico, con l’obiettivo di rendere i quartieri più vivibili,
-                        inclusivi e sicuri per tutti.
-                    </p>
-
-                    <a href="#hero" class="btn btn-outline-secondary mt-3">Torna su</a>
-                </div>
-
-                <div class="col-lg-6 text-center">
-                    <img src="../immagini/rappresentanti volontari.jpeg" alt="Volontari Ausiliari di Prossimità"
-                        class="img-fluid rounded-4 shadow-lg" style="max-height: 400px; object-fit: cover;">
-                </div>
-            </div>
+    <section id="hot" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold mb-3">Ultimi Servizi</h2>
+            <p class="lead">Le nostre attività recenti sul territorio</p>
+          </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div
+              id="serviziCarousel"
+              class="carousel slide shadow-lg"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators" id="carouselIndicators"></div>
+              <div class="carousel-inner" id="carouselInner"></div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#serviziCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#serviziCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="servizi.html" class="btn btn-primary btn-lg px-5"
+            >Tutti i Servizi</a
+          >
+        </div>
+      </div>
     </section>
+
+    <section id="perche-volontario" class="py-5 volunteer-section">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-9 text-center">
+            <h2 class="display-5 fw-bold mb-3">Perché diventare volontario?</h2>
+            <p class="lead volunteer-text">
+              Diventare volontario significa mettersi al servizio della
+              comunità, contribuire alla vivibilità dei quartieri e costruire
+              relazioni di fiducia con i cittadini. Gli Ausiliari di Prossimità
+              operano insieme per promuovere presenza, ascolto e supporto sul
+              territorio, offrendo un aiuto concreto alla città e un’esperienza
+              umana di grande valore.
+            </p>
+
+            <div class="text-center volunteer-actions mb-4">
+              <a
+                href="contatti.html#contatti"
+                class="btn btn-primary btn-lg px-5 me-2 mb-2"
+                >Contattaci</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="filmstrip-viewport">
+          <div class="filmstrip-track" id="volontariFilmstrip"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold mb-3">Domande Frequenti</h2>
+            <p class="lead">Risposte alle domande più comuni sui nostri servizi</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                    Cosa fanno gli Ausiliari di Prossimità?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Gli Ausiliari di Prossimità sono volontari che operano nei quartieri di Bologna per garantire presenza, supporto e sicurezza sul territorio. Collaborano con la Polizia Locale e i servizi comunali attraverso attività di presidio, ascolto e informazione.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    Come posso diventare volontario?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Per diventare volontario puoi contattare una delle associazioni aderenti alla rete. Ogni associazione ha i suoi requisiti specifici e percorsi di formazione. Visita la sezione "Associazioni" per trovare quella più vicina a te.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    I servizi sono gratuiti?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sì, tutti i servizi offerti dagli Ausiliari di Prossimità sono completamente gratuiti. L'attività è svolta esclusivamente su base volontaria e senza scopo di lucro.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    In quali quartieri operate?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Operiamo in tutti i quartieri della città di Bologna. Le associazioni aderenti coprono diverse zone della città, garantendo una presenza capillare sul territorio.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    Come posso contattare gli Ausiliari?
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Puoi contattarci tramite la sezione "Contatti" del sito, dove trovi i recapiti delle associazioni aderenti e i nostri riferimenti principali. Siamo disponibili anche sui social media.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="text-center mt-5">
+        <a href="#hero" class="btn btn-outline-secondary">Torna su</a>
+      </div>
+    </div>
 
     <footer class="py-5 mt-5 footer-custom">
-        <div class="container">
-            <div class="row text-center g-4">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <img
+              src="../immagini/logo volontari no bgrnd.png"
+              alt="Logo Ausiliari di Prossimità Bologna"
+              class="footer-logo"
+            />
+            <p class="mb-0 small">Ausiliari di Prossimità Bologna</p>
+          </div>
 
-                <div class="col-md-4">
-                    <img src="../immagini/logo volontari no bgrnd.png" alt="Logo Ausiliari di Prossimità Bologna"
-                        class="footer-logo">
-                    <p class="mb-0 small">
-                        Ausiliari di Prossimità Bologna
-                    </p>
-                </div>
+          <div class="col-md-4 footer-col">
+            <h6 class="fw-bold mb-2">Contattaci</h6>
+            <p class="mb-1">📧 info@ausiliari.it</p>
+            <p class="mb-0">📞 +39 000 000 0000</p>
+          </div>
 
-                <div class="col-md-4 footer-col">
-                    <h6 class="fw-bold mb-2">Contattaci</h6>
-                    <p class="mb-1">
-                        📧 info@ausiliari.it
-                    </p>
-                    <p class="mb-0">
-                        📞 +39 000 000 0000
-                    </p>
-                </div>
-
-                <div class="col-md-4 footer-col">
-                    <h6 class="fw-bold mb-2">La nostra sede</h6>
-                    <p class="mb-1">
-                        📍 Bologna - Via degli Orti 68
-                    </p>
-                    <p class="mb-0">
-                        🕒 Lun - Ven: 9:00 - 18:00
-                    </p>
-                </div>
-
-            </div>
-
-            <hr class="my-4 footer-divider">
-
-            <div class="text-center">
-                <p class="mb-0">© Ausiliari di Prossimità Bologna - Galleria</p>
-            </div>
+          <div class="col-md-4 footer-col">
+            <h6 class="fw-bold mb-2">La nostra sede</h6>
+            <p class="mb-1">📍 Bologna - Via degli Orti 68</p>
+            <p class="mb-0">🕒 Lun - Ven: 9:00 - 18:00</p>
+          </div>
         </div>
+
+        <hr class="my-4 footer-divider" />
+
+        <div class="text-center">
+          <p class="mb-0">© Ausiliari di Prossimità Bologna - Galleria</p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -289,6 +467,5 @@
     <script defer src="../js/dati-associazioni.js"></script>
     <script defer src="../js/dati-volontari.js"></script>
     <script defer src="../js/homepage.js"></script>
-</body>
-
+  </body>
 </html>

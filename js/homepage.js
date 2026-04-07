@@ -141,7 +141,7 @@ function initAssociazioni() {
 
             col.innerHTML = `
                 <div class="card text-center h-100">
-                    <img src="${ass.immagine}" class="card-img-top" alt="${ass.nome}" style="height: 250px; width: 100%; object-fit: contain;">
+                    <img src="${ass.immagine}" class="card-img-top" alt="${ass.nome}" style="height: 200px; width: 100%; object-fit: contain;">
                     <div class="card-body">
                         <h5>${ass.nome}</h5>
                         <p>${ass.sede || ''}</p>
