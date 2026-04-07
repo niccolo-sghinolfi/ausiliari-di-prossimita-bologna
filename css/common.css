@@ -1,0 +1,98 @@
+/* Navbar Blu Scuro + Bottoni Rossi Bologna */
+.bg-bologna-dark { background-color: #003399 !important; }
+.btn-primary { 
+    background-color: #FFCC00 !important; 
+    border-color: #FFCC00 !important; 
+}
+.btn-primary:hover { 
+    background-color: #b49000 !important; 
+    border-color: #b49000 !important; 
+}
+.btn-outline-light:hover { 
+    border-color: #b49000; 
+    background-color: #b49000; 
+    color: white; 
+}
+/* NAVBAR LOGO */
+
+.navbar-logo {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    line-height: 1.1;
+}
+
+.navbar-brand-text {
+    display: inline-block;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 0.82rem;
+        max-width: calc(100% - 56px);
+    }
+
+    .navbar-brand-text {
+        line-height: 1.05;
+    }
+
+    .navbar-logo {
+        height: 24px;
+    }
+
+    .navbar {
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+}
+/* FOOTER */
+
+.footer-custom {
+    background: #0f2747;
+    color: white;
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.footer-logo {
+    max-width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto 6px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* su desktop li allineiamo a sinistra ma con struttura uguale */
+@media (min-width: 768px) {
+    .footer-col {
+        align-items: flex-start;
+    }
+}
+
+.side-hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.72)),
+                url('../immagini/foto\ di\ gruppo.jpeg') center/cover no-repeat;
+    min-height: 42vh;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.side-row {
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,62 @@
+body {
+    background: #f8f9fa;
+}
+
+/* HERO */
+.page-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                url('https://www.comune.bologna.it/myportal/C_A944/api/content/download?id=63e0cdc2f6263400970881e2&size=lg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    color: white;
+}
+
+/* BOX GENERICI */
+.segreteria-box,
+.contact-form-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* CARD ASSOCIAZIONI */
+.association-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+/* BLOCCO LOGO */
+.association-logo-box {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+
+/* LOGO */
+.association-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* TESTO CARD */
+.association-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

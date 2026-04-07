@@ -1,0 +1,31 @@
+    <!-- Sezione Blog --> 
+     <!-- 
+<section id="blog" class="py-5 bg-light my-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <div class="card border-0 shadow-lg h-100">
+                    <div class="row g-0 h-100">
+                        
+                        <div class="col-md-4">
+                            <img src="./blog-immagine.jpg" class="img-fluid h-100 rounded-start" alt="Blog Post" style="object-fit: cover;">
+                        </div>
+                        
+                        <div class="col-md-8 p-4">
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">News</span>
+                                <span class="badge bg-secondary">15 Marzo 2026</span>
+                            </div>
+                            <h3 class="h2 fw-bold mb-3">Nuovo Corso Formazione Volontari</h3>
+                            <p class="lead mb-4">Aperte le iscrizioni per il corso di formazione per nuovi ausiliari di prossimità. 20 ore di lezione con Polizia Locale e esperti di welfare urbano.</p>
+                            <p class="mb-4">Durante il corso verranno trattati temi di sicurezza urbana, primo soccorso, comunicazione efficace e conoscenza del territorio bolognese. Le lezioni si terranno presso la Sala Stampa del Comune di Bologna.</p>
+                            <a href="#" class="btn btn-primary">Leggi di più</a>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+</section> -->

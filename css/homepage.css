@@ -1,0 +1,257 @@
+/* -------------------- */
+/* ANIMAZIONI GENERALI */
+/* -------------------- */
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in hero */
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: -1;
+}
+
+.hero-loaded #hero::before {
+    opacity: 1;
+}
+
+/* -------------------- */
+/* LOGO HERO (FIX PNG) */
+/* -------------------- */
+
+.logo-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo senza sfondo */
+.logo-hero {
+    max-width: 160px;
+    height: auto;
+    object-fit: contain;
+
+    background: transparent;
+    box-shadow: none;
+
+    transition: transform 0.3s ease;
+
+    /* ombra reale (NON box) */
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
+}
+
+.logo-hero:hover {
+    transform: scale(1.05);
+}
+
+/* -------------------- */
+/* CARD GENERICHE */
+/* -------------------- */
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* -------------------- */
+/* HERO BUTTONS */
+/* -------------------- */
+
+.hero-btn-main {
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 2.4rem;
+    --bs-btn-font-size: 1.2rem;
+    --bs-btn-border-radius: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+}
+
+.hero-btn-secondary {
+    --bs-btn-padding-y: 0.85rem;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 0.9rem;
+    font-weight: 600;
+}
+
+/* -------------------- */
+/* SEZIONE VOLONTARI */
+/* -------------------- */
+
+.volunteer-section {
+    background: #ffffff;
+}
+
+.volunteer-text {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #495057;
+}
+
+.volunteer-actions {
+    margin-top: 1.25rem;
+}
+
+/* -------------------- */
+/* PELLICOLA CONTINUA */
+/* -------------------- */
+
+.filmstrip-viewport {
+    overflow: hidden;
+    padding: 18px 0;
+
+    background:
+        radial-gradient(circle, #fff 20%, transparent 22%) top left / 22px 22px repeat-x,
+        radial-gradient(circle, #fff 20%, transparent 22%) bottom left / 22px 22px repeat-x,
+        #1f1f1f;
+
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.filmstrip-track {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    padding: 0 14px;
+
+    animation: filmstripScroll 40s linear infinite;
+}
+
+/* pausa su hover */
+.filmstrip-viewport:hover .filmstrip-track {
+    animation-play-state: paused;
+}
+
+.film-frame {
+    flex: 0 0 calc((100vw - 160px) / 5);
+    max-width: 220px;
+    min-width: 180px;
+}
+
+.film-frame-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #111;
+}
+
+/* immagine */
+.film-frame img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+/* overlay */
+.film-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(13, 39, 71, 0.9),
+        rgba(13, 39, 71, 0.35)
+    );
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 1rem;
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+.film-overlay h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.film-overlay p {
+    font-size: 0.92rem;
+    margin-bottom: 0;
+    opacity: 0.92;
+}
+
+/* hover effetto */
+.film-frame-inner:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.55);
+}
+
+.film-frame-inner:hover .film-overlay {
+    opacity: 1;
+}
+
+/* animazione scorrimento */
+@keyframes filmstripScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 8px));
+    }
+}
+
+/* -------------------- */
+/* CHI SIAMO COMPLETO */
+/* -------------------- */
+
+#chi-siamo-completo {
+    background: #f8f9fa;
+}
+
+#chi-siamo-completo p {
+    font-size: 1.05rem;
+    color: #495057;
+}
+
+/* -------------------- */
+/* RESPONSIVE */
+/* -------------------- */
+
+@media (max-width: 991.98px) {
+    .film-frame {
+        min-width: 170px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .film-frame {
+        min-width: 150px;
+    }
+
+    .film-frame img {
+        height: 220px;
+    }
+}
