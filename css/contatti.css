@@ -84,29 +84,4 @@ footer {
     color: white;
 }
 
-.volontario-box {
-    background: white;
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
 
-.volontario-box h2 {
-    color: #0f2747;
-}
-
-.volontario-box p {
-    color: #495057;
-    font-size: 1.05rem;
-    line-height: 1.6;
-}
-
-.volontario-img {
-    max-height: 180px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.volontario-img:hover {
-    transform: scale(1.05);
-}

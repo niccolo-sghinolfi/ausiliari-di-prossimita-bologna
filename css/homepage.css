@@ -112,6 +112,24 @@
     margin-top: 1.25rem;
 }
 
+.volontario-box {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    border: 1px solid #ececec;
+    box-shadow: 0 16px 36px rgba(15, 39, 71, 0.08);
+    padding: 2rem;
+}
+
+.volontario-box h2 {
+    color: #0f2747;
+}
+
+.volontario-box p {
+    color: #495057;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
 /* -------------------- */
 /* PELLICOLA CONTINUA */
 /* -------------------- */
