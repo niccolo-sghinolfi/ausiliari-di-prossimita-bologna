@@ -2,13 +2,6 @@ body {
     background: #f8f9fa;
 }
 
-.gallery-hero {
-    padding: 120px 0 60px;
-    background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.72)),
-        url('../immagini/ausiliari background.JPG') center/cover no-repeat;
-}
-
 .gallery-filters-box {
     background: #fff;
     border-radius: 16px;
