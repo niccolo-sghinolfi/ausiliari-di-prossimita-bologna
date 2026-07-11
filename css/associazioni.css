@@ -2,17 +2,6 @@ body {
     background: #f8f9fa;
 }
 
-/* HERO */
-.page-hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-                url('https://www.comune.bologna.it/myportal/C_A944/api/content/download?id=63e0cdc2f6263400970881e2&size=lg') center/cover no-repeat;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
-    color: white;
-}
-
 /* BOX GENERICI */
 .segreteria-box,
 .contact-form-box {

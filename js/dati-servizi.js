@@ -25,7 +25,7 @@ const servizi = [
     data: "2026-03-20",
     tipologia: "Parco",
     quartiere: ["Saragozza"],
-    associazione: ["A.N.P.E."],
+    associazione: ["A.N.P.P.E"],
     immagini: [
       "https://www.bologna-guide.com/wp-content/uploads/2018/09/giardini-margherita-laghetto-artificiale.jpg"
     ],

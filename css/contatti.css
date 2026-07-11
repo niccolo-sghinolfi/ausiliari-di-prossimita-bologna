@@ -2,23 +2,6 @@ body {
     background: #f8f9fa;
 }
 
-.contatti-hero {
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.72)),
-                url('../immagini/ausiliari background.JPG') center/cover no-repeat;
-    min-height: 38vh;
-    display: flex;
-    align-items: center;
-    padding-top: 90px;
-}
-
-.section-card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.10);
-    border: 1px solid #ececec;
-    padding: 2rem;
-}
-
 .section-title {
     font-weight: 700;
     margin-bottom: 1rem;
@@ -79,9 +62,5 @@ textarea.form-control {
     object-fit: contain;
 }
 
-footer {
-    background: #0f2747;
-    color: white;
-}
 
 

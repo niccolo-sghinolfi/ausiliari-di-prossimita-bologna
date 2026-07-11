@@ -247,10 +247,6 @@ body {
     color: #495057;
 }
 
-footer {
-    background: #0f2747;
-    color: white;
-}
 
 @media (max-width: 1199.98px) {
     .gallery-grid {

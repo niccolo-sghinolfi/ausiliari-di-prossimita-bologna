@@ -121,10 +121,6 @@ body {
     white-space: nowrap;
 }
 
-footer {
-    background: #0f2747;
-    color: white;
-}
 
 @media (max-width: 991.98px) {
     .servizio-carousel-image,
