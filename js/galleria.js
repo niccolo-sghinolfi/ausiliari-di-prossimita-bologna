@@ -11,7 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function buildGalleryItems() {
-    const serviziItems = (typeof servizi !== "undefined" ? servizi : []).flatMap((servizio) => {
+    // Un servizio entra nella Galleria solo se non è stato esplicitamente
+    // escluso (mostraInGalleria: false). Se non ha immagini semplicemente
+    // non produce nessuna card in galleria, ma resta comunque visibile
+    // come tessera nella pagina Servizi.
+    const serviziItems = (typeof servizi !== "undefined" ? servizi : [])
+        .filter((servizio) => servizio.mostraInGalleria !== false)
+        .flatMap((servizio) => {
         const immagini = Array.isArray(servizio.immagini) ? servizio.immagini : [];
 
         return immagini.map((img, imageIndex) => ({
