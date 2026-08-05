@@ -96,3 +96,9 @@
 .side-row {
     margin-bottom: 2rem;
 }
+
+/* La navbar è fixed: senza questo, saltando a un'ancora (#contatti, #ass1...)
+   il titolo della sezione finisce nascosto sotto la barra. */
+:target {
+    scroll-margin-top: 90px;
+}

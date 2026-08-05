@@ -71,10 +71,6 @@ function initCarosello() {
             ? servizio.quartiere.join(', ')
             : '';
 
-        const associazioni = Array.isArray(servizio.associazione)
-            ? servizio.associazione.join(', ')
-            : '';
-
         const item = document.createElement('div');
         item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
 
@@ -84,7 +80,7 @@ function initCarosello() {
                 <div class="carousel-caption d-none d-md-block">
                     <h5>${servizio.titolo}</h5>
                     <p class="mb-1">${servizio.descrizioneBreve || ''}</p>
-                    <small>${servizio.data || ''}${quartieri ? ` • ${quartieri}` : ''}${associazioni ? ` • ${associazioni}` : ''}</small>
+                    <small>${servizio.data || ''}${quartieri ? ` • ${quartieri}` : ''}</small>
                 </div>
             </a>
         `;
@@ -141,11 +137,10 @@ function initAssociazioni() {
 
             col.innerHTML = `
                 <div class="card text-center h-100">
-                    <img src="${ass.immagine}" class="card-img-top" alt="${ass.nome}" style="height: 200px; width: 100%; object-fit: contain;">
+                    <img src="${ass.immagine}" class="card-img-top assoc-card-logo" alt="${ass.nome}">
                     <div class="card-body">
-                        <h5>${ass.nome}</h5>
-                        <p>${ass.sede || ''}</p>
-                        <a href="${ass.link || 'associazioni.html'}" class="btn btn-primary">Scopri</a>
+                        <h5 class="mb-1">${ass.nome}</h5>
+                        <p class="mb-0 text-muted">${ass.sede || ''}</p>
                     </div>
                 </div>
             `;
@@ -185,9 +180,6 @@ function initVolontariFilmstrip() {
             : '../immagini/placeholder-volontario.jpg';
 
         const titolo = volontario.titolo || 'Volontario';
-        const associazioni = Array.isArray(volontario.associazione)
-            ? volontario.associazione.join(', ')
-            : '';
         const descrizione = volontario.descrizioneBreve || '';
 
         const frame = document.createElement('div');
@@ -198,8 +190,7 @@ function initVolontariFilmstrip() {
                 <img src="${immagine}" alt="${titolo}">
                 <div class="film-overlay">
                     <h3>${titolo}</h3>
-                    <p>${associazioni}</p>
-                    ${descrizione ? `<p class="mt-2">${descrizione}</p>` : ''}
+                    ${descrizione ? `<p>${descrizione}</p>` : ''}
                 </div>
             </div>
         `;

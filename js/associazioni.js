@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const col = document.createElement('div');
         col.className = 'col-lg-6';
 
+        // Ancora di destinazione dei link "associazioni.html#assN"
+        col.id = `ass${ass.id}`;
+
         col.innerHTML = `
             <div class="card association-card h-100">
 
@@ -37,4 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.appendChild(col);
     });
+
+    // Le card nascono via JS: quando si arriva dall'esterno con un #assN
+    // nell'URL, al momento dello scroll automatico del browser l'ancora
+    // non esiste ancora. Lo rifacciamo qui, a rendering concluso.
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 });

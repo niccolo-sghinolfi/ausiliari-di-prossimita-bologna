@@ -26,10 +26,6 @@ function renderServizi() {
             ? servizio.quartiere.join(", ")
             : "";
 
-        const associazioni = Array.isArray(servizio.associazione)
-            ? servizio.associazione.join(", ")
-            : "";
-
         col.innerHTML = `
             <div class="servizio-card p-3 h-100">
                 <img src="${cover}" class="servizio-cover mb-3" alt="${servizio.titolo}">
@@ -39,13 +35,9 @@ function renderServizi() {
                     <span class="servizio-badge">${servizio.tipologia || ""}</span>
                 </div>
 
-                <div class="servizio-meta mb-2">
+                <div class="servizio-meta mb-3">
                     ${servizio.data || ""}
                     ${quartieri ? ` • ${quartieri}` : ""}
-                </div>
-
-                <div class="servizio-meta mb-3">
-                    ${associazioni}
                 </div>
 
                 <p class="mb-3">${servizio.descrizioneBreve || ""}</p>
@@ -118,9 +110,6 @@ function toggleDettagli(index) {
 
 function buildExpandedMarkup(servizio, index) {
     const immagini = Array.isArray(servizio.immagini) ? servizio.immagini : [];
-    const associazioni = Array.isArray(servizio.associazione)
-        ? servizio.associazione.join(", ")
-        : "";
 
     const quartieri = Array.isArray(servizio.quartiere)
         ? servizio.quartiere.join(", ")
@@ -197,13 +186,7 @@ function buildExpandedMarkup(servizio, index) {
                     <div class="servizio-detail-box">
                         <div class="mb-2"><strong>Data:</strong> ${servizio.data || ""}</div>
                         ${quartieri ? `<div class="mb-2"><strong>Quartiere:</strong> ${quartieri}</div>` : ""}
-                        ${servizio.luogo ? `<div class="mb-2"><strong>Luogo:</strong> ${servizio.luogo}</div>` : ""}
-                        ${servizio.orario ? `<div class="mb-2"><strong>Orario:</strong> ${servizio.orario}</div>` : ""}
-                        ${servizio.volontari !== null && servizio.volontari !== undefined && servizio.volontari !== ""
-                            ? `<div class="mb-2"><strong>Volontari:</strong> ${servizio.volontari}</div>`
-                            : ""
-                        }
-                        ${associazioni ? `<div class="mb-0"><strong>Associazioni:</strong> ${associazioni}</div>` : ""}
+                        ${servizio.luogo ? `<div class="mb-0"><strong>Luogo:</strong> ${servizio.luogo}</div>` : ""}
                     </div>
                 </div>
             </div>
@@ -223,11 +206,19 @@ function getItemsPerRow() {
     return 1;
 }
 
-window.addEventListener("resize", () => {
-    const existingExpandedCol = document.getElementById("expanded-row-col");
-    if (!existingExpandedCol) return;
+// Il riposizionamento del dettaglio è costoso: lo eseguiamo solo quando
+// il ridimensionamento si è fermato, non a ogni singolo evento resize.
+let resizeTimeout;
 
-    const openIndex = Number(existingExpandedCol.dataset.openIndex);
-    existingExpandedCol.remove();
-    toggleDettagli(openIndex);
+window.addEventListener("resize", () => {
+    clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(() => {
+        const existingExpandedCol = document.getElementById("expanded-row-col");
+        if (!existingExpandedCol) return;
+
+        const openIndex = Number(existingExpandedCol.dataset.openIndex);
+        existingExpandedCol.remove();
+        toggleDettagli(openIndex);
+    }, 200);
 });
