@@ -17,9 +17,7 @@ const servizi = [
     tipologia: "Piazza Maggiore",
     quartiere: ["Navile"],
     immagini: [
-      "https://static.bolognawelcome.com/immagini/c6/ea/e1/99/20200312105245_landscape_16_9_mobile.jpg",
-      "../immagini/servizi/navile-2.jpg",
-      "../immagini/servizi/navile-3.jpg"
+      "https://static.bolognawelcome.com/immagini/c6/ea/e1/99/20200312105245_landscape_16_9_mobile.jpg"
     ],
     mostraInGalleria: false,
     descrizioneBreve: "Attività di presidio e supporto informativo nel quartiere.",

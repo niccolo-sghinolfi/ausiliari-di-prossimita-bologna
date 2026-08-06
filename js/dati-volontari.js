@@ -41,7 +41,7 @@ const volontari = [
     titolo: "Volontari in Piazza Maggiore",
     data: "2026-03-25",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/pzz maggiore.jpeg"],
+    immagini: ["../immagini/piazza-maggiore.jpeg"],
     descrizioneBreve: "Presidio nel centro storico durante eventi pubblici."
   },
   {
@@ -49,7 +49,7 @@ const volontari = [
     titolo: "Servizio Parchi",
     data: "2026-03-22",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/WhatsApp Image 2026-04-02 at 20.33.30.jpeg"],
+    immagini: ["../immagini/volontari-parchi-2026-04-02.jpeg"],
     descrizioneBreve: "Attività di monitoraggio e supporto nei parchi cittadini."
   },
   {
@@ -73,7 +73,7 @@ const volontari = [
     titolo: "Servizio 25 Aprile",
     data: "2026-03-15",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/25 aprile.jpeg"],
+    immagini: ["../immagini/25-aprile.jpeg"],
     descrizioneBreve: "Servizio durante celebrazione pubblica."
   },
   {

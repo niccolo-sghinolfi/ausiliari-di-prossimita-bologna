@@ -86,7 +86,7 @@
 
 .side-hero {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.72)),
-                url('../immagini/foto\ di\ gruppo.jpeg') center/cover no-repeat;
+                url('../immagini/foto-di-gruppo.jpeg') center/cover no-repeat;
     min-height: 42vh;
     display: flex;
     align-items: center;

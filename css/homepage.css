@@ -39,7 +39,7 @@
 
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-        url('../immagini/foto di gruppo.jpeg') center/cover no-repeat fixed;
+        url('../immagini/foto-di-gruppo.jpeg') center/cover no-repeat fixed;
 
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
