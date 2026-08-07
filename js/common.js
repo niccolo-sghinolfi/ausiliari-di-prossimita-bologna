@@ -68,6 +68,10 @@ function renderNavbar() {
 
     navbarEl.innerHTML = `
         <div class="container">
+            <!-- Segnaposto invisibile: bilancia il pulsante del menu così il
+                 marchio resta centrato su mobile. Su desktop sparisce. -->
+            <span class="navbar-spazio d-lg-none" aria-hidden="true"></span>
+
             <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="homepage.html">
                 <img src="../immagini/logo-volontari-no-sfondo.png" alt="Logo" class="navbar-logo">
                 <span class="navbar-brand-text">AUSILIARI DI PROSSIMITÀ</span>

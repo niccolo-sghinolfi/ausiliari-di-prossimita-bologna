@@ -33,7 +33,6 @@
 @media (max-width: 575.98px) {
     .navbar-brand {
         font-size: 0.82rem;
-        max-width: calc(100% - 56px);
     }
 
     .navbar-brand-text {
@@ -51,6 +50,35 @@
 
     .navbar-toggler {
         padding: 0.25rem 0.5rem;
+    }
+}
+
+/* MARCHIO CENTRATO SU MOBILE
+   Sotto i 992px la barra contiene tre elementi in fila: un segnaposto
+   vuoto a sinistra, il marchio al centro e il pulsante del menu a destra.
+   Dando al segnaposto la stessa larghezza del pulsante, il marchio resta
+   esattamente al centro invece di essere spinto a sinistra. */
+
+@media (max-width: 991.98px) {
+    .navbar-spazio,
+    .navbar-toggler {
+        flex: 0 0 46px;
+        width: 46px;
+    }
+
+    /* Il pulsante non ha piu' bisogno di padding orizzontale:
+       l'icona si centra da sola nella larghezza fissata sopra. */
+    .navbar-toggler {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-brand {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-right: 0;
+        justify-content: center;
+        text-align: center;
     }
 }
 /* FOOTER */
