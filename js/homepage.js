@@ -162,31 +162,35 @@ window.addEventListener('resize', () => {
     }, 200);
 });
 
-// Pellicola volontari a scorrimento continuo
+// Pellicola volontari a scorrimento continuo.
+// Legge da dati-galleria.js le foto con tipologia "Foto Volontari",
+// cioè quelle dentro immagini/pellicola/.
 function initVolontariFilmstrip() {
     const container = document.getElementById('volontariFilmstrip');
 
-    if (!container || typeof volontari === 'undefined') {
+    if (!container || typeof galleriaFoto === 'undefined') {
+        return;
+    }
+
+    const fotoVolontari = galleriaFoto.filter(foto => foto.tipologia === 'Foto Volontari');
+
+    if (fotoVolontari.length === 0) {
         return;
     }
 
     container.innerHTML = '';
 
-    const volontariLoop = [...volontari, ...volontari];
+    // L'elenco viene stampato due volte di seguito: è così che
+    // l'animazione CSS scorre all'infinito senza stacchi visibili.
+    const fotoLoop = [...fotoVolontari, ...fotoVolontari];
 
-    volontariLoop.forEach((volontario) => {
-        const immagine = Array.isArray(volontario.immagini) && volontario.immagini.length > 0
-            ? volontario.immagini[0]
-            : '../immagini/placeholder-volontario.jpg';
-
-        const titolo = volontario.titolo || 'Volontario';
-
+    fotoLoop.forEach((foto) => {
         const frame = document.createElement('div');
         frame.className = 'film-frame';
 
         frame.innerHTML = `
             <div class="film-frame-inner">
-                <img src="${immagine}" alt="${titolo}">
+                <img src="${foto.immagine}" alt="Foto volontari">
             </div>
         `;
 

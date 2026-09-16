@@ -1,13 +1,12 @@
 /**
- * Servizi svolti sul territorio.
+ * Servizi svolti sul territorio - alimentano la pagina Servizi e il
+ * carosello "I Nostri Servizi" della homepage.
+ *
+ * Le foto della Galleria non vengono più da qui: arrivano da
+ * dati-galleria.js, generato dalle sottocartelle di immagini/.
  *
  * Campi obbligatori: id, titolo, data (formato YYYY-MM-DD), tipologia, immagini.
- * Campi opzionali:   quartiere, luogo, descrizioneBreve,
- *                    descrizioneCompleta, mostraInGalleria.
- *
- * mostraInGalleria: impostare a false per tenere il servizio nella pagina
- * Servizi ma escluderne le foto dalla Galleria. Se il campo è assente,
- * il servizio finisce in Galleria.
+ * Campi opzionali:   quartiere, luogo, descrizioneBreve, descrizioneCompleta.
  */
 const servizi = [
   {
@@ -19,7 +18,6 @@ const servizi = [
     immagini: [
       "https://static.bolognawelcome.com/immagini/c6/ea/e1/99/20200312105245_landscape_16_9_mobile.jpg"
     ],
-    mostraInGalleria: false,
     descrizioneBreve: "Attività di presidio e supporto informativo nel quartiere.",
     descrizioneCompleta: "Testo più lungo con tutti i dettagli del servizio, obiettivi, persone coinvolte e attività svolte.",
     luogo: "Piazza Maggiore"

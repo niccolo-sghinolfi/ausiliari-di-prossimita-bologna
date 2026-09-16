@@ -31,12 +31,15 @@ body {
     padding: 20px;
 }
 
-/* LOGO */
+/* LOGO
+   width/height al 100% + object-fit: contain fanno sì che ogni logo
+   venga ridimensionato per riempire lo spazio disponibile, il più
+   possibile mantenendo le proporzioni. Con "width: auto; height: auto"
+   (come prima) un logo con un file sorgente piccolo restava piccolo:
+   veniva solo rimpicciolito se troppo grande, mai ingrandito. */
 .association-logo-box img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
     display: block;

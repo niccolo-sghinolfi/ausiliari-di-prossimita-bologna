@@ -126,12 +126,6 @@ body {
     text-overflow: ellipsis;
 }
 
-.gallery-date {
-    font-size: 0.9rem;
-    color: #6c757d;
-    line-height: 1.2;
-}
-
 .gallery-modal-content {
     background: #111827;
     border: none;
@@ -247,10 +241,6 @@ body {
 
     .gallery-meta {
         padding: 0.7rem 0.8rem 0.8rem;
-    }
-
-    .gallery-date {
-        font-size: 0.85rem;
     }
 
     .gallery-nav-btn {

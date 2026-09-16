@@ -12,26 +12,26 @@ const associazioni = [
   {
     id: 1,
     nome: "Rangers",
-    sede: "Via del Rosario 2/5, 40131 Bologna",
-    presidente: "Valter Grandi",
+    sede: "Saragozza",
+    presidente: "Mario",
     immagine:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIn5EvYyf12ldKXJhmP3FvHE8CHmB8IcC_hA&s",
-    contatti: "+39 377 491 3666",
-    email: "rangers.emiliaromagna@gmail.com",
+    contatti: "+39 051 123 4567",
+    email: "navile@ausiliaribologna.it",
     descrizione:
-      "I Rangers Emilia Romagna ODV sono un’associazione di volontariato impegnata nella tutela del territorio e della comunità. Attraverso la presenza dei propri volontari, contribuiscono alle attività di prevenzione, monitoraggio e assistenza, collaborando con le istituzioni per promuovere sicurezza, rispetto dell’ambiente e cura degli spazi comuni.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 2,
     nome: "A.I.S.A.",
-    sede: "Via Abramo Lincoln 66/A",
-    presidente: "Marco Ballotta",
+    sede: "Saragozza",
+    presidente: "Mario",
     immagine:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw9rdRmYvJwiJIjuguXi5rkEiT-b0tqJdAYA&s",
-    contatti: "+39 348 1586490",
-    email: "info@aisaboemiliaromagna.it",
+    contatti: "+39 051 234 5678",
+    email: "santostefano@ausiliaribologna.it",
     descrizione:
-      "A.I.S.A. ODV è un’associazione impegnata nella tutela dell’ambiente e nella sicurezza del territorio. I suoi volontari svolgono attività di prevenzione, controllo e sensibilizzazione, contribuendo alla cura degli spazi pubblici e alla diffusione di una maggiore attenzione verso l’ambiente e la comunità.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 3,
@@ -40,22 +40,22 @@ const associazioni = [
     presidente: "Mario",
     immagine:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mdzMOyFPUSzcaBmTphD1g6fMTOtw50MJsg&s",
-    contatti: "+39",
-    email: "prova@ausiliaribologna.it",
+    contatti: "+39 051 345 6789",
+    email: "saragozza@ausiliaribologna.it",
     descrizione:
-      "L’A.N.P.Pe. riunisce volontari con esperienza e competenze legate al mondo della Polizia Penitenziaria. A Bologna partecipa alle attività degli Ausiliari di Prossimità attraverso la presenza sul territorio, il supporto alla cittadinanza e la collaborazione con le istituzioni per promuovere sicurezza e civile convivenza.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 4,
     nome: "Pattuglie Cittadine",
-    sede: "Viale Abramo Lincoln 66/A, 40139 Bologna",
-    presidente: "Alessandro Bonaccorsi",
+    sede: "Porto",
+    presidente: "Mario",
     immagine:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdOASBP_T6g-z_FttXbzRNrMUWDo_iY2aZ6g&s",
-    contatti: "+051 546779",
-    email: "prova@ausiliaribologna.it",
+    contatti: "+39 051 456 7890",
+    email: "porto@ausiliaribologna.it",
     descrizione:
-      "Il Corpo delle Pattuglie Cittadine è una realtà di volontariato attiva sul territorio bolognese. I volontari svolgono attività di presenza, osservazione e monitoraggio, contribuendo alla vivibilità degli spazi pubblici e segnalando agli organi competenti eventuali situazioni di pericolo, degrado o necessità.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 5,
@@ -64,44 +64,44 @@ const associazioni = [
     presidente: "mario",
     immagine:
       "https://www.angiv-provinciabologna.it/images/logo-ANGIV-login.png",
-    contatti: "+39",
-    email: "prova@ausiliaribologna.it",
+    contatti: "+39 051 345 6789",
+    email: "saragozza@ausiliaribologna.it",
     descrizione:
-      "A.N.G.I.V. è una realtà di volontariato impegnata nella presenza e nella tutela del territorio. Attraverso l’attività dei propri volontari contribuisce alle iniziative di prevenzione, assistenza e sensibilizzazione, collaborando con le altre realtà coinvolte per favorire una maggiore attenzione e partecipazione della comunità.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 6,
-    nome: "Cinofili San Gregorio Magno",
+    nome: "Cinofili",
     sede: "Saragozza",
     presidente: "Mario",
     immagine:
       "https://www.yeoandyeo.com/wp-content/uploads/07_02_21_1253437873_AAB_560x292.jpg",
     contatti: "+39 051 345 6789",
-    email: "prova@ausiliaribologna.it",
+    email: "saragozza@ausiliaribologna.it",
     descrizione:
-      "L’Associazione Cinofili San Gregorio Magno mette a disposizione la professionalità dei propri volontari e delle unità cinofile per attività a supporto della comunità. La preparazione dei conduttori e dei cani permette di svolgere attività di prevenzione, ricerca e assistenza, contribuendo alla sicurezza e alla presenza sul territorio.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 7,
     nome: "E.N.P.A.",
-    sede: "Via Zamboni 59, 40126 Bologna",
+    sede: "Saragozza",
     presidente: "Mario",
     immagine:
       "https://www.enpabologna.org/wp-content/uploads/2021/05/LOGO-black-209x101.png",
-    contatti: "+39 342 3204416",
-    email: "bologna@enpa.org",
+    contatti: "+39 051 345 6789",
+    email: "saragozza@ausiliaribologna.it",
     descrizione:
-      "E.N.P.A. è un’associazione impegnata nella tutela e nella protezione degli animali. Attraverso i propri volontari promuove il rispetto e il benessere degli animali, sensibilizza la cittadinanza e contribuisce alla gestione delle situazioni che riguardano animali in difficoltà e la corretta convivenza tra persone e animali.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     id: 8,
     nome: "Finchè non capita a te",
-    sede: "Via Cencetti 3, 40125 Bologna",
-    presidente: "Francesco Borrelli",
+    sede: "Saragozza",
+    presidente: "Mario",
     immagine: "../immagini/finche-te.webp",
-    contatti: "+39 389 2443697",
-    email: "info@finchenoncapitaate.it",
+    contatti: "+39 051 345 6789",
+    email: "saragozza@ausiliaribologna.it",
     descrizione:
-      "Finché non capita a te è un’associazione impegnata nella prevenzione e nella sensibilizzazione su tematiche sociali e di sicurezza. Attraverso attività informative e iniziative sul territorio promuove consapevolezza, responsabilità e attenzione verso le situazioni di rischio, favorendo una comunità più attenta e partecipe",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
 ];
