@@ -14,34 +14,34 @@
 const volontari = [
   {
     id: 1,
-    titolo: "Volontari Ranger in servizio",
+    titolo: "Supporto",
     data: "2026-04-02",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/coopi.jpeg"],
-    descrizioneBreve: "Servizio di presidio sul territorio in collaborazione con altre associazioni."
+    immagini: ["../immagini/pellicola/caro1.jpeg"],
+    descrizioneBreve: "Supporto alla popolazione."
   },
   {
     id: 2,
-    titolo: "Volontario alla Maratona",
+    titolo: "Briefing Serale",
     data: "2026-03-30",
-    tipologia: "Foto Volontari",
-    immagini: ["../immagini/maratona.jpeg"],
-    descrizioneBreve: "Supporto logistico durante la maratona cittadina."
+    tipologia: "Servizio Serale",
+    immagini: ["../immagini/pellicola/caro2.jpeg"],
+    descrizioneBreve: "Briefing pre servizio serale"
   },
   {
     id: 3,
-    titolo: "Cooperazione con Protezione Civile",
+    titolo: "Briefing Giornaliero",
     data: "2026-03-28",
-    tipologia: "Foto Volontari",
-    immagini: ["../immagini/pvic.jpeg"],
-    descrizioneBreve: "Attività congiunta con la Protezione Civile."
+    tipologia: "Servizio Giornaliero",
+    immagini: ["../immagini/pellicola/caro3.jpeg"],
+    descrizioneBreve: "Briefing pre servizio giornaliero"
   },
   {
     id: 4,
     titolo: "Volontari in Piazza Maggiore",
     data: "2026-03-25",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/piazza-maggiore.jpeg"],
+    immagini: ["../immagini/pellicola/caro4.jpeg"],
     descrizioneBreve: "Presidio nel centro storico durante eventi pubblici."
   },
   {
@@ -49,7 +49,7 @@ const volontari = [
     titolo: "Servizio Parchi",
     data: "2026-03-22",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/volontari-parchi-2026-04-02.jpeg"],
+    immagini: ["../immagini/pellicola/caro5.jpeg"],
     descrizioneBreve: "Attività di monitoraggio e supporto nei parchi cittadini."
   },
   {
@@ -57,7 +57,7 @@ const volontari = [
     titolo: "Servizio Parchi",
     data: "2026-03-20",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/parco.jpeg"],
+    immagini: ["../immagini/pellicola/caro6.jpeg"],
     descrizioneBreve: "Servizio congiunto nei parchi pubblici."
   },
   {
@@ -65,7 +65,7 @@ const volontari = [
     titolo: "Volontario A.I.S.A. in servizio",
     data: "2026-03-18",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/aisa1.jpeg"],
+    immagini: ["../immagini/pellicola/caro7.jpeg"],
     descrizioneBreve: "Servizio ordinario sul territorio."
   },
   {
@@ -73,7 +73,7 @@ const volontari = [
     titolo: "Servizio 25 Aprile",
     data: "2026-03-15",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/25-aprile.jpeg"],
+    immagini: ["../immagini/pellicola/caro8.jpeg"],
     descrizioneBreve: "Servizio durante celebrazione pubblica."
   },
   {
@@ -81,7 +81,7 @@ const volontari = [
     titolo: "Commemorazione",
     data: "2026-03-10",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/memoria.jpeg"],
+    immagini: ["../immagini/pellicola/caro9.jpeg"],
     descrizioneBreve: "Servizio durante evento commemorativo."
   },
   {
@@ -89,7 +89,15 @@ const volontari = [
     titolo: "Servizio allo stadio",
     data: "2026-03-05",
     tipologia: "Foto Volontari",
-    immagini: ["../immagini/stadio.jpeg"],
+    immagini: ["../immagini/pellicola/caro10.jpeg"],
+    descrizioneBreve: "Servizio di supporto durante evento sportivo."
+  },
+    {
+    id: 11,
+    titolo: "Servizio allo stadio",
+    data: "2026-03-05",
+    tipologia: "Foto Volontari",
+    immagini: ["../immagini/pellicola/caro11.jpeg"],
     descrizioneBreve: "Servizio di supporto durante evento sportivo."
   }
 ];

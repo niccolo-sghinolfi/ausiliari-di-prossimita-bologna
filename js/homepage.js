@@ -180,7 +180,6 @@ function initVolontariFilmstrip() {
             : '../immagini/placeholder-volontario.jpg';
 
         const titolo = volontario.titolo || 'Volontario';
-        const descrizione = volontario.descrizioneBreve || '';
 
         const frame = document.createElement('div');
         frame.className = 'film-frame';
@@ -188,10 +187,6 @@ function initVolontariFilmstrip() {
         frame.innerHTML = `
             <div class="film-frame-inner">
                 <img src="${immagine}" alt="${titolo}">
-                <div class="film-overlay">
-                    <h3>${titolo}</h3>
-                    ${descrizione ? `<p>${descrizione}</p>` : ''}
-                </div>
             </div>
         `;
 
