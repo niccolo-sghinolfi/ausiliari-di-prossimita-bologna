@@ -284,13 +284,13 @@
     }
 }
 
-/* Carosello "I Nostri Servizi": object-position in alto per non tagliare le
-   teste nelle foto verticali quando l'immagine viene ritagliata per
-   riempire il riquadro largo e basso del carosello. */
+/* Carosello "I Nostri Servizi": object-position a 1/4 dall'alto, non
+   totalmente in alto, per non tagliare le teste nelle foto verticali
+   ma senza spingere il soggetto troppo in alto nel riquadro. */
 .hot-carousel-image {
     height: 400px;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 25%;
 }
 
 @media (max-width: 767.98px) {
