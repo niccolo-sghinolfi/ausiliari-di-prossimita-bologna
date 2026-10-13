@@ -2,27 +2,29 @@
  * Foto della Galleria, raggruppate per tipologia.
  *
  * Questo file viene rigenerato leggendo il contenuto delle sottocartelle
- * di immagini/: ogni sottocartella è una tipologia (usata per il filtro
- * in galleria), e il suo nome diventa il testo del filtro così com'è
- * scritto - tranne "pellicola", che diventa "Foto Volontari".
+ * di immagini/: ogni sottocartella è una tipologia. Il nome della
+ * sottocartella su disco è in minuscolo/senza spazi (richiesto per gli
+ * hosting Linux, che distinguono maiuscole e minuscole), mentre il testo
+ * mostrato nel filtro ("tipologia" qui sotto) può restare con lo
+ * spazio/maiuscola che preferisci.
  *
  * Per aggiungere o togliere foto dalla Galleria: aggiungi o rimuovi il
  * file dentro la sottocartella giusta (o creane una nuova per una nuova
  * tipologia), poi fai rigenerare questo file - il sito non può leggere
  * da solo il contenuto delle cartelle sul server.
  *
- * La cartella "homepage" non entra qui: contiene le foto delle sezioni
- * della pagina principale, non foto di servizio.
+ * Cartelle attualmente vuote (pronte per quando ci saranno foto):
+ * concerti/, feste-di-strada/, stadio/.
  */
 const galleriaFoto = [
-  { id: "emergenze-1", tipologia: "Emergenze", immagine: "../immagini/Emergenze/pvic.jpeg" },
-  { id: "emergenze-2", tipologia: "Emergenze", immagine: "../immagini/Emergenze/servizio.jpeg" },
-  { id: "manifestazioni-1", tipologia: "Manifestazioni", immagine: "../immagini/Manifestazioni/25-aprile.jpeg" },
-  { id: "maratone-1", tipologia: "Maratone", immagine: "../immagini/Maratone/maratona.jpeg" },
-  { id: "parco-1", tipologia: "Parco", immagine: "../immagini/Parco/parco.jpeg" },
-  { id: "parco-2", tipologia: "Parco", immagine: "../immagini/Parco/studio.jpeg" },
-  { id: "parco-3", tipologia: "Parco", immagine: "../immagini/Parco/volontari-parchi-2026-04-02.jpeg" },
-  { id: "piazza-maggiore-1", tipologia: "Piazza Maggiore", immagine: "../immagini/Piazza Maggiore/piazza-maggiore.jpeg" },
+  { id: "emergenze-1", tipologia: "Emergenze", immagine: "../immagini/emergenze/pvic.jpeg" },
+  { id: "emergenze-2", tipologia: "Emergenze", immagine: "../immagini/emergenze/servizio.jpeg" },
+  { id: "manifestazioni-1", tipologia: "Manifestazioni", immagine: "../immagini/manifestazioni/25-aprile.jpeg" },
+  { id: "maratone-1", tipologia: "Maratone", immagine: "../immagini/maratone/maratona.jpeg" },
+  { id: "parco-1", tipologia: "Parco", immagine: "../immagini/parco/parco.jpeg" },
+  { id: "parco-2", tipologia: "Parco", immagine: "../immagini/parco/studio.jpeg" },
+  { id: "parco-3", tipologia: "Parco", immagine: "../immagini/parco/volontari-parchi-2026-04-02.jpeg" },
+  { id: "piazza-maggiore-1", tipologia: "Piazza Maggiore", immagine: "../immagini/piazza-maggiore/piazza-maggiore.jpeg" },
   { id: "foto-volontari-1", tipologia: "Foto Volontari", immagine: "../immagini/pellicola/caro1.jpeg" },
   { id: "foto-volontari-2", tipologia: "Foto Volontari", immagine: "../immagini/pellicola/caro2.jpeg" },
   { id: "foto-volontari-3", tipologia: "Foto Volontari", immagine: "../immagini/pellicola/caro3.jpeg" },

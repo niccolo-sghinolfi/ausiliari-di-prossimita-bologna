@@ -33,10 +33,10 @@
                             <span class="info-chip">Segnalazioni</span>
                             <span class="info-chip">Supporto cittadini</span>
                         </div>
-                        <p class="mb-2"><strong>Sede operativa:</strong> [Inserire indirizzo segreteria]</p>
-                        <p class="mb-2"><strong>Telefono:</strong> [Inserire numero]</p>
-                        <p class="mb-2"><strong>Email:</strong> [Inserire email]</p>
-                        <p class="mb-2"><strong>Orari:</strong> [Inserire giorni e orari di apertura]</p>
+                        <p class="mb-2"><strong>Sede operativa:</strong> Viale Lincoln n. 66 – Bologna</p>
+                        <p class="mb-2"><strong>Telefono:</strong> +39 333 1544030</p>
+                        <p class="mb-2"><strong>Email:</strong> ausiliaridiprossimitabo@gmail.com</p>
+                        <p class="mb-2"><strong>Orari:</strong> Lun - Ven: 15:00 - 18:00</p>
                         <p class="mb-0">
                             La segreteria coordina le attività organizzative della rete, fornisce informazioni
                             ai cittadini e raccoglie richieste, segnalazioni e domande relative alle associazioni
@@ -63,13 +63,27 @@
                             sulle attività degli Ausiliari di Prossimità o per entrare in contatto
                             con la segreteria.
                         </p>
-                        <p class="mb-1"><strong>Email di destinazione:</strong> [Inserire email segreteria]</p>
-                        <p class="mb-0"><strong>Telefono:</strong> [Inserire recapito]</p>
+                        <p class="mb-1"><strong>Email di destinazione:</strong> ausiliaridiprossimitabo@gmail.com</p>
+                        <p class="mb-0"><strong>Telefono:</strong> +39 333 1544030</p>
                     </div>
 
                     <div class="col-lg-7">
-                        <form id="contactForm" novalidate>
+                        <!--
+                            Invio temporaneo via FormSubmit.co (gratuito, nessun server PHP
+                            necessario) mentre il sito è su hosting gratuito senza PHP.
+                            Quando passerai a un hosting con PHP, per tornare a usare
+                            api/contatti.php con PHPMailer basta:
+                            1) togliere action/method qui sotto (o farli puntare a "#")
+                            2) in js/contatti.js cambiare l'URL del fetch da
+                               "https://formsubmit.co/ajax/..." a "../api/contatti.php"
+                        -->
+                        <form id="contactForm" action="https://formsubmit.co/ausiliaridiprossimitabo@gmail.com" method="POST" novalidate>
                             <div class="row g-3">
+                                <!-- Config FormSubmit: niente captcha (c'è già l'honeypot sotto), oggetto fisso dell'email -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="Nuovo messaggio dal sito - Ausiliari di Prossimità">
+                                <input type="hidden" name="_template" value="table">
+
                                 <!-- Honeypot anti-spam: campo nascosto, un utente reale non lo vede né lo compila -->
                                 <div class="d-none" aria-hidden="true">
                                     <label for="sito_web">Non compilare questo campo</label>
