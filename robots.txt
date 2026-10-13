@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niccolo-sghinolfi.github.io/ausiliari-di-prossimita-bologna/sitemap.xml
