@@ -283,3 +283,18 @@
         height: 220px;
     }
 }
+
+/* Carosello "I Nostri Servizi": object-position in alto per non tagliare le
+   teste nelle foto verticali quando l'immagine viene ritagliata per
+   riempire il riquadro largo e basso del carosello. */
+.hot-carousel-image {
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media (max-width: 767.98px) {
+    .hot-carousel-image {
+        height: 280px;
+    }
+}

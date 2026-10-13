@@ -76,7 +76,7 @@ function initCarosello() {
 
         item.innerHTML = `
             <a href="servizi.html" class="text-decoration-none">
-                <img src="${cover}" class="d-block w-100" alt="${servizio.titolo}" style="height: 400px; object-fit: cover;">
+                <img src="${cover}" class="d-block w-100 hot-carousel-image" alt="${servizio.titolo}">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>${servizio.titolo}</h5>
                     <p class="mb-1">${servizio.descrizioneBreve || ''}</p>
