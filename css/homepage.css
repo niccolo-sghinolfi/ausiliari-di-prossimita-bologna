@@ -82,7 +82,7 @@
 }
 
 .logo-hero:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 /* -------------------- */
@@ -232,7 +232,7 @@
 
 /* hover: leggero ingrandimento, nessuna informazione sovrapposta */
 .film-frame-inner:hover img {
-    transform: scale(1.06);
+    transform: scale(1.2);
 }
 
 /* animazione scorrimento */
